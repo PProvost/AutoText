@@ -277,9 +277,9 @@ function AutoText:SayMessage(shortcutName)
 		local inInstance, instanceType = IsInInstance()
 		if inInstance and instanceType == "pvp" then
 			chatType = "BATTLEGROUND"
-		elseif GetNumRaidMembers() > 0 then
+		elseif IsInRaid() then
 			chatType = 'RAID'
-		elseif GetNumPartyMembers() > 0 then
+		elseif IsInGroup() then
 			chatType = 'PARTY'
 		else
 			self:Print("Unable to send message. You are not in a group.")
