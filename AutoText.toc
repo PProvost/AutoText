@@ -1,0 +1,29 @@
+## Interface: 50001
+## Title: AutoText
+## Notes: Manages commonly used tells, messages, announcements, etc.
+## Author: Quaiche
+## Version: @project-version@
+## OptionalDeps: Ace3, LibQTip-1.0
+## X-Category: Chat
+## X-License: Apache 2.0
+## X-Embeds: Ace3
+## SavedVariables: AutoTextDB
+## SavedVariablesPerCharacter: AutoTextDBPC
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+libs\AceConsole-3.0\AceConsole-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceEvent-3.0\AceEvent-3.0.xml
+libs\LibQTip-1.0\lib.xml
+
+tekKonfigAboutPanel.lua
+LibDataBroker-1.1.lua
+AutoText.lua
+AutoText-LDB.lua

@@ -1,0 +1,62 @@
+h2. About AutoText
+
+AutoText is an addon for managing whispers, tells and other messages that you send frequently. You can use it for strats, raid assignments, vent info and many other things.
+
+Each message can be assigned to a category to let you group up messages in whatever way you like. Examples might include Officer, Raid, General, etc. The category is used to group related messages in the configuration UI and in the LibDataBroker tooltip.
+
+Feature ideas or requests should be filed as Tickets on the "CurseForge Project Site":http://wow.curseforge.com/projects/autotext/
+
+h2. Slash Commands
+
+The following slash commands are available:
+
+|*Slash Command*|*Description*|
+|/autotext|Pops up the configuration screen used to create and manage messages|
+|/at|Same as /autotext|
+|/atsay name|Sends the message with the given shortcut name|
+|/atlist|Lists all configured messages|
+
+h2. Message Targets
+
+Each message can be configured to be sent to one of many different
+targets:
+
+|*Target*|*Equivalent WoW Slash Command*|
+|SAY|/say|
+|WHISPER|/w  (will popup a dialog asking for the target of the whisper)|
+|YELL|/y|
+|PARTY|/p|
+|GUILD|/g|
+|OFFICER|/o|
+|RAID|/ra|
+|RAID_WARNING|/rw|
+|BATTLEGROUND|/bg|
+|REPLY|/r  (will reply to the last person who sent you a whisper)|
+|TARGET|Sends the message to your current target|
+|GROUP|Automatically determines the correct group (Battleground, Raid or Party).|
+
+h2. Token substitution
+
+In the message text, you can use a special token and the addon will replace it with the appropriate
+text. The format of the token is:
+
+${unitid}
+
+Where unitid is any of the valid unitids from the WoW API. 
+See "http://www.wowwiki.com/UnitId":http://www.wowwiki.com/UnitId for more information.
+
+Examples:
+
+${target}
+${mouseover}
+${focus}
+
+h2. Feature Backlog
+
+The following features are under consideration for a future release:
+
+* Custom channel support (COMING SOON!)
+* Direct slash commands (e.g. /mymessage instead of /atsay mymessage)
+* Share messages w/ other AutoText users? (for sharing vent info w/ officers etc.)
+* Localization 
+
