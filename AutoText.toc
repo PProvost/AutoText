@@ -1,4 +1,4 @@
-## Interface: 50001
+## Interface: 50100
 ## Title: AutoText
 ## Notes: Manages commonly used tells, messages, announcements, etc.
 ## Author: Quaiche
